@@ -1,0 +1,27 @@
+Random Text File Content
+========================
+
+The quick brown fox jumps over the lazy dog.
+Java Exception Handling Best Practices
+- Always catch specific exceptions
+- Log meaningful error messages
+- Clean up resources in finally blocks
+- Use try-with-resources for AutoCloseable objects
+
+Key Points:
+1. NullPointerException occurs when accessing null references
+2. ArrayIndexOutOfBoundsException thrown for invalid array indices
+3. ClassNotFoundException occurs during class loading failures
+4. IOException handles input/output stream errors
+
+Random Data:
+Temperature: 23.5°C
+Humidity: 65%
+Pressure: 1013.25 hPa
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+DateTime: 2024-01-15 14:30:45
+Status: Active
+Version: 1.0.0

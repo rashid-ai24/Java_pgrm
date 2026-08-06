@@ -1,7 +1,6 @@
 // 1. Electricity Bill Generator
 // File Name: Ebbill.java
 
-import java.io.*;
 import java.util.*;
 
 class ElectricityBill  
