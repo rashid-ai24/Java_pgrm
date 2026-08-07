@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout :: body">
+<div class="row g-4">
+  <div class="col-md-4">
+    <div class="card text-white bg-success">
+      <div class="card-body">
+        <h5 class="card-title">Students</h5>
+        <p class="card-text" th:text="${studentCount}"></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card text-white bg-info">
+      <div class="card-body">
+        <h5 class="card-title">Courses</h5>
+        <p class="card-text" th:text="${courseCount}"></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card text-white bg-warning">
+      <div class="card-body">
+        <h5 class="card-title">Enrollments</h5>
+        <p class="card-text" th:text="${enrollmentCount}"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 mt-4">
+    <h4>Courses</h4>
+    <div class="row" th:each="course : ${popularCourses}">
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 th:text="${course.code} + ' - ' + ${course.title}"></h5>
+            <a th:href="@{'/courses'}" class="stretched-link">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</html>
